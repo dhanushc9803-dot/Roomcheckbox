@@ -1,0 +1,143 @@
+/* ===== Global Reset ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== Page Background ===== */
+body {
+    min-height: 100vh;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: linear-gradient(135deg, #e0eafc, #cfdef3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    color: #1e293b;
+}
+
+/* ===== Main Heading ===== */
+h1 {
+    width: 100%;
+    max-width: 480px;
+    background: #ffffff;
+    padding: 28px 30px 12px;
+    border-radius: 16px 16px 0 0;
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+    color: #172554;
+}
+
+/* ===== Checkbox and Radio Buttons ===== */
+input[type="checkbox"],
+input[type="radio"] {
+    width: 17px;
+    height: 17px;
+    accent-color: #4f46e5;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+/* ===== Terms Checkbox ===== */
+#cb1 {
+    margin-right: 8px;
+}
+
+/* ===== Room Options ===== */
+#rb1,
+#rb2,
+#rb3 {
+    margin-right: 9px;
+}
+
+/* ===== Labels ===== */
+body > label {
+    display: block;
+    width: 100%;
+    max-width: 480px;
+    background: #ffffff;
+    padding: 8px 30px;
+    font-size: 15px;
+    color: #334155;
+}
+
+/* ===== Select Button ===== */
+#selectbtn {
+    display: block;
+    width: 100%;
+    max-width: 420px;
+    margin-top: 24px;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 10px;
+    background: #4f46e5;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.25s ease,
+                transform 0.2s ease,
+                box-shadow 0.25s ease;
+}
+
+#selectbtn:hover {
+    background: #3730a3;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(79, 70, 229, 0.25);
+}
+
+#selectbtn:active {
+    transform: translateY(0);
+}
+
+/* ===== Output Labels ===== */
+#lbl,
+#lbl1 {
+    display: block;
+    width: 100%;
+    max-width: 480px;
+    padding: 10px 30px;
+    background: #ffffff;
+    font-size: 14px;
+    color: #475569;
+    overflow-wrap: anywhere;
+}
+
+/* ===== Rounded Bottom of Card ===== */
+#lbl1 {
+    padding-bottom: 25px;
+    border-radius: 0 0 16px 16px;
+}
+
+/* ===== Keyboard Accessibility ===== */
+input:focus-visible,
+button:focus-visible {
+    outline: 3px solid #a5b4fc;
+    outline-offset: 3px;
+}
+
+/* ===== Mobile Responsive ===== */
+@media (max-width: 520px) {
+    body {
+        padding: 16px;
+    }
+
+    h1 {
+        font-size: 23px;
+        padding: 24px 16px 14px;
+    }
+
+    body > label,
+    #lbl,
+    #lbl1 {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #selectbtn {
+        max-width: 100%;
+    }
+}
